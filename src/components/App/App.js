@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Date from '../Date/Date'
 
 function App() {
   return (
@@ -10,15 +11,16 @@ function App() {
         </h2>
       </header>
       <div>
+        <Date />
         <h3>
           Did you workout today?
         </h3>
         <input type="radio" id="yes-button"/>
-        <label for="yes-button">Yes</label>
+        <label htmlFor="yes-button">Yes</label>
         <input type="radio" id="no-button" />
-        <label for="no-button">No</label>
+        <label htmlFor="no-button">No</label>
         <input type="radio" id="not-yet-button" />
-        <label for="not=yet-button">Not Yet</label>
+        <label htmlFor="not=yet-button">Not Yet</label>
       </div>
     </div>
   );
