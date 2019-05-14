@@ -2,28 +2,29 @@ import React, { Component } from 'react';
 
 import moment from 'moment';
 
-class Date extends Component {
+class PullDate extends Component {
     getCurrentDate = () => {
         const today = new Date();
-        console.log(today);
+        
         
         const dd = today.getDate();
-        const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        console.log(dd);
+        const mm = today.getMonth(); //January is 0!
         const yyyy = today.getFullYear();
-        const date = `${dd}/${mm}/${yyyy}`;
+        const date = `${mm}/${dd}/${yyyy}`;
         console.log('Hio', date);
 
-        return `<h3>Today is: ${date}</h3>`;
+        return date;
     }
 
     render() {
         return (
             <div>
                 <p>Hi</p>
-                { moment(this.getCurrentDate()).format("MMM Do, YYYY")}
+                <h3>Today is: { moment(this.getCurrentDate()).format("MMM Do, YYYY")}</h3>
             </div>
         )
     }
 }
 
-export default Date;
+export default PullDate;

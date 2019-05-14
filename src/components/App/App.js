@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Date from '../Date/Date'
+import PullDate from '../PullDate/PullDate'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         </h2>
       </header>
       <div>
-        <Date />
+        <PullDate />
         <h3>
           Did you workout today?
         </h3>
