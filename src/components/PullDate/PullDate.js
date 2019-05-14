@@ -9,7 +9,7 @@ class PullDate extends Component {
         
         const dd = today.getDate();
         console.log(dd);
-        const mm = today.getMonth(); //January is 0!
+        const mm = today.getMonth() + 1; //January is 0!
         const yyyy = today.getFullYear();
         const date = `${mm}/${dd}/${yyyy}`;
         console.log('Hio', date);
