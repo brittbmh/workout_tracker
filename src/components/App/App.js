@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import PullDate from '../PullDate/PullDate'
+import Streak from '../Streak/Streak';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
       <div>
         <PullDate />
+        <Streak />
         <h3>
           Did you workout today?
         </h3>
