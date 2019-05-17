@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>
-          Workout Tracker
-        </h2>
+        <h1>
+          DYWT
+        </h1>
       </header>
       <div>
         <PullDate />
