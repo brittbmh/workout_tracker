@@ -8,7 +8,7 @@ class Streak extends Component {
     render() {
         return (
             <div>
-                <h3>Your current streak is: {this.streakCount} days</h3>
+                <h3>Your current streak is: {this.streakCount()} days</h3>
             </div>
         )
     }

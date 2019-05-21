@@ -5,7 +5,8 @@ class Calendar extends Component {
     render() {
         return (
             <div>
-                <p>Insert Calendar</p>
+                <h4>Current Streak</h4>
+                {/* map through current streak somehow to set stars */}
             </div>
         )
     }
