@@ -17,9 +17,9 @@ class Question extends Component {
                     Did you workout today?
                 </h3>
                 <button id="yesButton" onClick={this.handleYes}>
-                        YES!
+                    <span>YES!</span>
                 </button>
-                <p><a>not yet</a></p>
+                <p id="notYet"><a href="#">not yet</a></p>
             </div>
         )
     }

@@ -1,16 +1,60 @@
 #yesButton {
-    background-color: #022B3A;
-    color: #FDF0D5;
+    background-color: #0D0630;
+    color: #E4DFDA;
     font-size: 30px;
     border-radius: 4px;
     width: 20%;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 10px 0 11px;
 }
 
-#yesButton:hover {
-    background-color: #FDF0D5;
+#yesButton span {
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+#notYet {
+    font-size: 12px;
     color: #022B3A;
 }
 
+#yesButton:after, #yesButton:before {
+    padding: 18px 0 11px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(-100% - 30px);
+    height: calc(100% - 29px);
+    width: calc(100% + 20px);
+    color: #fff;
+    border-radius: 4px;
+    transform: skew(-25deg);
+}
+
+#yesButton:after {
+    background: #fffffa;
+    transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1) 0.2s;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+#yesButton:before {
+    background: #EE4663;
+    z-index: 5;
+    transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#yesButton:hover:after {
+    left: calc(0% - 10px);
+    transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#yesButton:hover:before {
+    left: calc(0% - 10px);
+    transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
