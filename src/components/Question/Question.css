@@ -1,3 +1,9 @@
+#questionDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #yesButton {
     background-color: #0D0630;
     color: #E4DFDA;
@@ -5,15 +11,11 @@
     border-radius: 4px;
     width: 20%;
     overflow: hidden;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
+    transform: translate(0%, 0%);
     padding: 10px 0 11px;
 }
 
 #yesButton span {
-    display: block;
     position: relative;
     z-index: 10;
 }

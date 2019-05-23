@@ -12,12 +12,13 @@ class Question extends Component {
 
     render() {
         return (
-            <div>
+            <div id="questionDiv">
                 <h3 id="workoutQuestion">
                     Did you workout today?
                 </h3>
                 <button id="yesButton" onClick={this.handleYes}>
                     <span>YES!</span>
+                    
                 </button>
                 <p id="notYet"><a href="#">not yet</a></p>
             </div>
