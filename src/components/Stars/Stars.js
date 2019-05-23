@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Calendar extends Component {
+class Stars extends Component {
 
     render() {
         return (
@@ -12,4 +12,4 @@ class Calendar extends Component {
     }
 }
 
-export default Calendar;
+export default Stars;
