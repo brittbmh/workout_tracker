@@ -1,0 +1,16 @@
+#yesButton {
+    background-color: #022B3A;
+    color: #FDF0D5;
+    font-size: 30px;
+    border-radius: 4px;
+    width: 20%;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+#yesButton:hover {
+    background-color: #FDF0D5;
+    color: #022B3A;
+}
+
